@@ -13,3 +13,4 @@ buildNumber.properties
 derby.log
 .idea
 *.iml
+settings.xml

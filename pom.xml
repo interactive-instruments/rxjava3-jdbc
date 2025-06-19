@@ -3,11 +3,12 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <parent>
+    <!--parent>
         <groupId>com.github.davidmoten</groupId>
         <artifactId>sonatype-parent</artifactId>
         <version>0.2.4</version>
-    </parent>
+    </parent-->
+    <groupId>com.github.davidmoten</groupId>
     <artifactId>rxjava3-jdbc-parent</artifactId>
     <version>0.1.5-SNAPSHOT</version>
     <name>${project.artifactId}</name>
@@ -174,8 +175,12 @@
     </reporting>
     <distributionManagement>
         <repository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+            <id>nexus</id>
+            <url>https://dl.interactive-instruments.de/repository/maven-releases/</url>
         </repository>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <url>https://dl.interactive-instruments.de/repository/maven-snapshots/</url>
+        </snapshotRepository>
     </distributionManagement>
 </project>
