@@ -37,11 +37,11 @@ public final class TransactedReturnGeneratedKeysBuilder implements GetterTx {
                     update.parameterGroupsToFlowable(), update.updateBuilder.sql, mapper, false);
             return o.materialize() //
                     .flatMap(n -> Tx.toTx(n, connection.get(), db)) //
-                    .doOnNext(tx -> {
+                    /*.doOnNext(tx -> {
                         if (tx.isComplete()) {
-                            ((TxImpl<T>) tx).connection().commit();
+                            //((TxImpl<T>) tx).connection().commit();
                         }
-                    });
+                    })*/;
         });
     }
 
