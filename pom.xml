@@ -10,7 +10,7 @@
     </parent-->
     <groupId>com.github.davidmoten</groupId>
     <artifactId>rxjava3-jdbc-parent</artifactId>
-    <version>0.1.5-SNAPSHOT</version>
+    <version>0.1.4-ii.1</version>
     <name>${project.artifactId}</name>
     <packaging>pom</packaging>
     <url>http://github.com/davidmoten/rxjava3-jdbc</url>
